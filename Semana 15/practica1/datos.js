@@ -1,0 +1,3 @@
+exports.departamentos = ["La Unión", "San Miguel", "Usulután", "Morazán", "San Vicente", "Cabañas", "Cuscatlán", "La Libertad", "San Salvador", "Chalatenango", "La Paz", "Ahuachapán", "Santa Ana", "Sonsonate"];
+exports.comunidades = ["San Salvador","Apopa", "Ciudad Delgado", "Mejicanos", "Soyapango", "San Miguel", "Chinameca", "Chirilagua", "Ciudad Barrios", "El Tránsito", "Moncagua", "La Unión", "Anamorós", "Concepción de Oriente", "Conchagua", "El Carmen", "Pasquina", "San Alejo", "Santa Rosa de Lima"];
+exports.empresasUsanNodejs = ["Linkedin", "Netflix", "Uber", "PayPal", "Mozilla"];

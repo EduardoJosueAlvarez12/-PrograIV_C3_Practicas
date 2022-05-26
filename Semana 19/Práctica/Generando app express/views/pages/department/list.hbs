@@ -1,0 +1,28 @@
+{{> header}}
+
+<h2>{{ viewTitle }}</h2>
+
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <th>Name</th>
+        <th>Alias</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.alias}}</td>
+            <td>{{this.description}}</td>
+            <td>
+                <a href="/department/{{this._id}}">Update</a>
+                <a href="/department/delete/{{this._id}}"
+                onclick="return confirm('Desea eliminar el registro?');">
+                Delete</a>
+
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

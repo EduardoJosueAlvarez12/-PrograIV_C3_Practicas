@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCKETIO</title>
+</head>
+<body>
+
+    <h1></h1>
+
+</body>
+</html>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    socket.on('message', (data) => {
+        document.write(data);
+        document.querySelector('h1').innerHTML=data;
+
+    });
+
+    socket.emit('clientEvent', "Mensaje enviado desde el cliente");
+
+    socket.on('broadcast', (data) => {
+        document.body.innerHTML='';
+        document.write(data.information);
+    })
+</script>
